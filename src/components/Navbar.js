@@ -51,7 +51,7 @@ const Navbar = () => {
               <Link className="navbar-item" to="/">
                 Články
               </Link>
-              <Link className="navbar-item" to="/o">
+              <Link className="navbar-item" to="/about">
                 O
               </Link>
             </div>
