@@ -21,9 +21,8 @@ collections:
       - {
           label: "Den publikování",
           name: "date",
-          widget: "datetime",
+          widget: "date",
           date_format: "DD.MM.YYYY",
-          time_format: "HH:mm",
         }
       - { label: "Tagy", name: "tags", widget: "list", default: ["post"] }
       - { label: "Text", name: "body", widget: "markdown" }
@@ -37,9 +36,8 @@ collections:
       - {
           label: "Den publikování",
           name: "date",
-          widget: "datetime",
+          widget: "date",
           date_format: "DD.MM.YYYY",
-          time_format: "HH:mm",
         }
       - { label: "Odkaz", name: "permalink", widget: "string" }
       - label: "Navigace" # https://www.11ty.dev/docs/plugins/navigation/
