@@ -4,9 +4,19 @@
   <title>{{ renderData.title or title or metadata.title }}</title>
   <meta name="description" content="{{ metaDescription or renderData.metaDescription or metadata.description }}">
   {% set css %}
+    {% include "assets/css/fonts.css" %}
     {% include "assets/css/inline.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
+  <link rel="icon" href="/static/img/myslanka_32.png">
+  <link
+    rel="preload"
+    href="/static/fonts/xcharter-roman.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+
   {# {% set js %}
     {% include "assets/js/inline.js" %}
   {% endset %}

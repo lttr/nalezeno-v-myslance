@@ -11,15 +11,15 @@ pagination:
 permalink: /tags/{{ tag }}/
 layout: layouts/base.njk
 renderData:
-  title: "Tagged “{{ tag }}”"
-  metaDescription: "All posts from the Blog tagged with “{{ tag }}”"
+  title: "Tag “{{ tag }}”"
+  metaDescription: "Všechny příspěvky označené tagem “{{ tag }}”"
 ---
 
-<h1>Tagged “{{ tag }}”</h1>
+<h1>Tag “{{ tag }}”</h1>
 
 {% set postslist = collections[tag] %}
 {% include "components/postslist.njk" %}
 
 <nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
+  <a href="{{ '/blog/' | url }}">← Zpět</a>
 </nav>
