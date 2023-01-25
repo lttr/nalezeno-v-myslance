@@ -4,7 +4,15 @@
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  font-display: fallback;
+  font-display: swap;
+}
+@font-face {
+  font-family: Charter;
+  src: url("/static/fonts/xcharter-bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: Charter;

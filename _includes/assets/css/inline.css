@@ -16,18 +16,26 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--body-font);
+  font-size: 18px;
 }
 
 body {
   display: grid;
   justify-content: center;
   height: 100vh;
+  height: 100dvh;
   grid-template-rows: auto 1fr auto;
   background-color: var(--background);
 }
 
 main {
   width: 75ch;
+}
+
+@media (max-width: 75ch) {
+  main {
+    width: 96vw;
+  }
 }
 
 p,
@@ -41,7 +49,7 @@ a[href]:visited {
   color: var(--primary);
 }
 
-a[href]:not(:hover) {
+:is(nav, header, h1, h2, h3) a[href]:not(:hover) {
   text-decoration: none;
 }
 
@@ -82,11 +90,19 @@ pre {
   margin: 0.5em 0;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 /* Header Logo (style as h2) */
 header > em {
   display: block;
   font-size: 2em;
-  margin: 0.67em 0;
+  margin-block: 0.67em;
+  margin-right: 1.3rem;
   font-weight: bold;
   font-style: normal;
 }
@@ -109,6 +125,7 @@ header nav li {
 header nav li a {
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
+  font-weight: bold;
 }
 
 header nav li a[href]:not(:hover) {
@@ -191,10 +208,4 @@ button {
   background-color: var(--primary);
   color: var(--secondary);
   cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-  :root {
-    font-size: 1.1rem;
-  }
 }
