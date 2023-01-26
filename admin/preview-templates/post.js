@@ -15,7 +15,6 @@ const Post = createClass({
           <p>
             <small>
               <time>${format(entry.getIn(["data", "date"]))}</time>
-              ${" by Author"}
             </small>
           </p>
 
@@ -24,8 +23,8 @@ const Post = createClass({
           ${this.props.widgetFor("body")}
           <p>
             ${entry
-        .getIn(["data", "tags"], [])
-        .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
+              .getIn(["data", "tags"], [])
+              .map((tag) => html` <a href="#" rel="tag">${tag}</a> `)}
           </p>
         </article>
       </main>
