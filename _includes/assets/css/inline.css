@@ -95,21 +95,34 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: clamp(0rem, 2vh, 1rem);
 }
 
 /* Header Logo (style as h2) */
 header > em {
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 2em;
-  margin-block: 0.67em;
   margin-right: 1.3rem;
+  margin-block: clamp(0rem, 2vh, 1rem);
   font-weight: bold;
   font-style: normal;
 }
 
+header img {
+  position: relative;
+  top: -0.3rem;
+  margin-inline: 1em;
+}
+
 /* Header Nav */
+header nav {
+  margin-block: 0.8rem;
+}
+
 header nav ul {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
