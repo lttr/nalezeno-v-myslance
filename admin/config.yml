@@ -4,6 +4,8 @@ backend:
   name: git-gateway
   branch: master
 
+publish_mode: editorial_workflow
+
 locale: "cs"
 
 site_url: https://www.nalezenovmyslance.cz/
@@ -24,7 +26,7 @@ collections:
           widget: "date",
           date_format: "DD.MM.YYYY",
         }
-      - { label: "Tagy", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Tagy", name: "tags", widget: "list", default: [] }
       - { label: "Text", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Stránka"
