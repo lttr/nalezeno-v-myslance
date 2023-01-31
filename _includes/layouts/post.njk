@@ -14,7 +14,7 @@ section: blog
   {{ layoutContent | safe }}
 
   {% if tags %}
-    <p>
+    <p class="tags">
     {% for tag in tags %}
       {%- if tag != "blog" -%}
         {% set tagUrl %}/tagy/{{ tag }}/{% endset %}

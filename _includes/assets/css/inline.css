@@ -162,7 +162,22 @@ main > section > article > * {
   margin-bottom: 0.5em;
 }
 
+/* Lists */
+article ul li {
+  list-style-type: circle;
+  line-height: 1.5;
+}
+
+/* Headings */
+article :is(h1, h2, h3) {
+  margin-top: 1.3em;
+}
+
 /* Post Tags */
+article .tags {
+  margin-top: 2em;
+}
+
 a[rel="tag"],
 a[rel="tag"]:visited {
   display: inline-block;
@@ -189,36 +204,4 @@ a[rel="tag"]:hover {
 
 a[rel="tag"]:last-child {
   margin-right: 0;
-}
-
-/* Contact Form */
-form {
-  display: grid;
-  padding: 2em 0;
-}
-
-form label {
-  display: none;
-}
-
-input,
-textarea,
-button {
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-  font-size: 1rem;
-  font-family: "Avenir", "Avenir Next", sans-serif;
-}
-
-input,
-textarea {
-  border: 1px solid black;
-}
-
-button {
-  border: 1px solid var(--primary);
-  background-color: var(--primary);
-  color: var(--secondary);
-  cursor: pointer;
 }
