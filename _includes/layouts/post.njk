@@ -16,8 +16,8 @@ section: blog
   {% if tags %}
     <p>
     {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      {%- if tag != "blog" -%}
+        {% set tagUrl %}/tagy/{{ tag }}/{% endset %}
         <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
       {%- endif -%}
     {% endfor %}
