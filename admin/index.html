@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -16,20 +16,20 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script type="module" src="/admin/preview-templates/index.js"></script>
     <script type="module">
-      import cs from "https://esm.sh/netlify-cms-locales@^1.39.0/dist/esm/cs/index.js";
-      CMS.registerLocale("cs", cs);
+      import cs from "https://esm.sh/netlify-cms-locales@^1.39.0/dist/esm/cs/index.js"
+      CMS.registerLocale("cs", cs)
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
           if (!user) {
             window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
+              document.location.href = "/admin/"
+            })
           } else {
             window.netlifyIdentity.on("logout", () => {
-              document.location.href = "/admin/";
-            });
+              document.location.href = "/admin/"
+            })
           }
-        });
+        })
       }
     </script>
   </body>

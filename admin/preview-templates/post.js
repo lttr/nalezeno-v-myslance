@@ -1,12 +1,12 @@
-import htm from "https://unpkg.com/htm?module";
+import htm from "https://unpkg.com/htm?module"
 
-const html = htm.bind(h);
-const format = new Intl.DateTimeFormat("cs").format;
+const html = htm.bind(h)
+const format = new Intl.DateTimeFormat("cs").format
 
 // Preview component for a Post
 const Post = createClass({
   render() {
-    const entry = this.props.entry;
+    const entry = this.props.entry
 
     return html`
       <main>
@@ -28,8 +28,8 @@ const Post = createClass({
           </p>
         </article>
       </main>
-    `;
+    `
   },
-});
+})
 
-export default Post;
+export default Post
